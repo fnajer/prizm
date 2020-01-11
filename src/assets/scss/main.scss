@@ -1,0 +1,127 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+  // @media screen and (max-width: $desktopWidth) {
+	// 	font-size: 16px;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+	// 	font-size: 15px;
+  // }
+  // @media screen and (max-width: $phoneWidth) {
+	// 	font-size: 14px;
+  // }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bg-color;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a { text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section, .section {
+  position: relative;
+  padding: 40px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  //remove
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: $desktopWidth;
+}
+.small-container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 730px;
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .container {
+    max-width: $smDesktopWidth;
+  }
+}
+@media screen and (max-width: $smDesktopWidth) {
+  .container {
+    max-width: $tableWidth;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: $tableWidth) {
+  .container,
+  .small-container {
+    max-width: initial;
+    padding: 0;
+  }
+}
+// @media screen and (max-width: $phoneWidth) {
+//   .container {
+//     max-width: initial;
+//     padding: 28px 0;
+//   }
+// }
+
+// Modules
+@import "modules/shared.scss";
+@import "modules/header.scss";
+@import "modules/mobile-menu.scss";
+@import "modules/promo.scss";
+@import "modules/projects.scss";
+@import "modules/mobile.scss";
+@import "modules/calculator.scss";
+@import "modules/steps.scss";
+@import "modules/affiliates.scss";
+@import "modules/trading.scss";
+@import "modules/ratings.scss";
+@import "modules/news.scss";
+@import "modules/join.scss";
+
+@import "modules/breadcrumbs.scss";
+@import "modules/article.scss";
+@import "modules/footer.scss";
+
+
