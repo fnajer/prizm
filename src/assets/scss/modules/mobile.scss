@@ -1,0 +1,56 @@
+
+.mobile {
+  height: 688px;
+  background: url("../img/mobile.jpg") center right no-repeat;
+  margin-bottom: 50px;
+}
+
+.mobile__container { 
+  max-width: 445px;
+}
+
+@media screen and (max-width: $tableWidth) {
+  .mobile {
+    background: url('../img/mobile-mobile.jpg') top no-repeat;
+    padding-top: 350px !important;
+    height: auto;
+  }
+  .mobile__container { 
+    max-width: initial;
+    padding: 0 25px;
+  }
+}
+
+.mobile__item {
+  position: relative;
+  padding: 36px 158px 36px 104px;
+  border-radius: 24px;
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  background-color: #24243b;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 32px;
+  svg:first-child {
+    position: absolute;
+    left: 32px;
+    top: 34px;
+  }
+  svg:last-child {
+    position: absolute;
+    right: 44px;
+    top: 41px;
+  }
+  &:hover {
+    box-shadow: 0 12px 12px -4px rgba(20, 16, 41, 0.24), 0 4px 4px -1px rgba(20, 16, 41, 0.24), 0 1px 1px 0 rgba(20, 16, 41, 0.4);
+    background-color: #323249;
+    cursor: pointer;
+    svg:last-child {
+      opacity: 0.5;
+    }
+  }
+}
