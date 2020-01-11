@@ -1,0 +1,34 @@
+
+.join {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 560px;
+  width: 100%;
+  max-width: 1440px;
+  background: url("../img/join-bg.jpg") center no-repeat;
+  .text-purple:before {
+    content: '@prizmspacebot';
+  }
+}
+
+.join__container { 
+  max-width: 445px;
+}
+
+@media screen and (max-width: $tableWidth) {
+  .join {
+    padding: 28px 25px !important;
+    height: auto;
+    padding-top: 450px !important;
+    background: url("../img/join-mobile.jpg") top no-repeat;
+    background-size: cover;
+    .text-purple:before {
+      content: '@prizm spacebot';
+    }
+  }
+  .join__container { 
+    width: 100%;
+    max-width: initial;
+  }
+}
