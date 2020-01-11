@@ -1,0 +1,123 @@
+
+.trading {
+  position: relative;
+  height: 500px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .heading {
+    margin-bottom: 0;
+  }
+}
+
+.trading::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 80%;
+  top: 25%;
+  transform: translate(-80%, -25%);
+  z-index: -1;
+  width: 197px;
+  height: 197px;
+  border-radius: 260px;
+  background-image: linear-gradient(135deg, #ff00aa, #9c42f5 53%, #5d2de1);
+}
+
+.trading__left-container { 
+  max-width: 445px;
+}
+.trading__right-container {
+  display: flex;
+  width: 550px;
+  justify-content: center;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .trading {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 28px 25px !important;
+    .trading__blocks {
+      justify-content: space-between;
+      max-width: 600px;
+      overflow: auto;
+      .trading__block {
+        flex-shrink: 0;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &:before {
+      left: 58%;
+      top: 38%;
+    }
+  }
+  .trading__left-container { 
+    max-width: initial;
+  }
+  .trading__right-container,
+  .trading__blocks {
+    width: 100%;
+  }
+}
+
+.trading__blocks {
+  width: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.trading__block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 255px;
+  height: 336px;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  background-color: #24243b;
+}
+.trading__img {
+  margin-bottom: 24px;
+}
+.trading__img_circle {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-color: rgba(0, 172, 239, 0.03);
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.trading__note {
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 1px;
+  color: rgba(224, 224, 255, 0.6);
+  margin-bottom: 8px;
+}
+.trading__name {
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
