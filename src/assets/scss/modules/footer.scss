@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .email-form {
   position: relative;
@@ -68,15 +68,10 @@
   line-height: 1.71;
   letter-spacing: 1px;
   color: #ffffff;
-  li {
-    padding: 20px 10px;
+  a {
+    padding: 20px 0;
     font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.71;
-    letter-spacing: normal;
-    color: rgba(224, 224, 255, 0.6);
   }
 }
 
@@ -91,7 +86,7 @@
   line-height: 1.71;
   letter-spacing: normal;
   color: rgba(224, 224, 255, 0.6);
-  padding: 16px 0;
+  padding: 25px 0 10px 0;
 }
 
 .footer__made {
@@ -138,13 +133,15 @@
     li {
       color: #ffffff;
       position: relative;
+      width: 100%;
+      text-align: left;
       &::after {
         content: '';
         display: block;
         width: 30px;
         height: 30px;
         position: absolute;
-        right: 0;
+        right: -10px;
         top: 11.5px;
         background: url("/assets/img/arrow-right.svg") center no-repeat;
       }

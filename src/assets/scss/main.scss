@@ -43,10 +43,10 @@ ul, li {
   list-style-type: none;
 }
 
-section, .section {
-  position: relative;
-  padding: 40px 0;
-}
+// section, .section {
+//   position: relative;
+//   padding: 40px 0;
+// }
 
 .wrapper {
   display: flex;
@@ -80,6 +80,10 @@ section, .section {
   max-width: 730px;
 }
 
+.container_indent {
+	padding: 72px 0;
+}
+
 @media screen and (max-width: $desktopWidth) {
   .container {
     max-width: $smDesktopWidth;
@@ -88,16 +92,31 @@ section, .section {
 @media screen and (max-width: $smDesktopWidth) {
   .container {
     max-width: $tableWidth;
-    padding: 0 20px;
+  }
+  .container_indent {
+    padding: 55px 0;
   }
 }
 @media screen and (max-width: $tableWidth) {
   .container,
   .small-container {
     max-width: initial;
-    padding: 0;
+  }
+  .container_indent,
+  .join .container {
+    padding: 35px 55px;
   }
 }
+@media screen and (max-width: $phoneWidth) {
+  .container_indent,
+  .join .container {
+    padding: 72px 32px;
+  }
+  .container_indent.promo {
+    padding: 32px;
+  }
+}
+
 // @media screen and (max-width: $phoneWidth) {
 //   .container {
 //     max-width: initial;

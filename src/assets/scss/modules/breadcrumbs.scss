@@ -32,14 +32,16 @@
 
 .breadcrumbs__crumb {
   cursor: pointer;
+  color: rgba(224,224,255,.6);
   &:hover {
     opacity: 0.5;
   }
 }
 
-@media screen and (max-width: $desktopWidth) {
+@media screen and (max-width: $tableWidth) {
   .breadcrumbs_top {
-    padding: 28px 25px 0 25px !important;
+    padding: 12px 32px;
+    margin: 0;
   }
 }
 

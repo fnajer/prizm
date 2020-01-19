@@ -33,19 +33,10 @@
   &_second-part {
     font-weight: normal;
   }
+  button {
+    flex-shrink: 0;
+  }
 }
-
-.header__menu li {
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: right;
-  color: #ffffff;
-}
-
 
 .wrapper-dropdown {
   /* Size and position */
@@ -105,7 +96,12 @@
  
 .wrapper-dropdown .dropdown li {
     display: flex;
-    padding: 12px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+}
+.wrapper-dropdown .dropdown li a {
     font-size: 16px;
     font-weight: 600;
     font-stretch: normal;
@@ -113,11 +109,12 @@
     line-height: 1.5;
     letter-spacing: 1px;
     color: #ffffff;
-    transition: all 0.3s ease-out;
-    cursor: pointer;
-    &:hover {
-      opacity: 0.5;
-    }
+		padding: 12px;
+}
+.language__img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .wrapper-dropdown.active .dropdown {
@@ -141,12 +138,17 @@
 }
 @media screen and (max-width: $smDesktopWidth) {
   .burger-btn {
-    right: 28px;
+    right: 0;
   }
 }
 @media screen and (max-width: $tableWidth) {
-  .header__container {
-    padding: 0 28px !important;
+  .header {
+    padding: 0 28px;
+  }
+}
+@media screen and (max-width: $phoneWidth) {
+  .header {
+    padding: 0 16px;
   }
 }
 

@@ -2,7 +2,6 @@
 .trading {
   position: relative;
   height: 500px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,8 +14,8 @@
   content: '';
   display: block;
   position: absolute;
-  left: 80%;
-  top: 25%;
+  left: 82%;
+	top: 21%;
   transform: translate(-80%, -25%);
   z-index: -1;
   width: 197px;
@@ -38,7 +37,6 @@
   .trading {
     flex-wrap: wrap;
     height: auto;
-    padding: 28px 25px !important;
     .trading__blocks {
       justify-content: space-between;
       max-width: 600px;
@@ -58,6 +56,7 @@
   }
   .trading__left-container { 
     max-width: initial;
+    margin-bottom: 40px;
   }
   .trading__right-container,
   .trading__blocks {
@@ -70,7 +69,6 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 60px;
 }
 
 .trading__block {

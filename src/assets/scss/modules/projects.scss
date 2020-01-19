@@ -3,20 +3,17 @@
   display: flex;
   justify-content: space-between;
   max-height: 702px;
-  margin-bottom: 70px;
 
   @media screen and (max-width: $desktopWidth) {
     flex-wrap: wrap;
     justify-content: center;
     min-height: fit-content;
-    padding: 0 28px !important;
     .projects__right-container {
       max-width: initial;
       order: 0;
       margin-bottom: 40px;
     }
     .projects__left-container {
-      margin-bottom: 50px;
       order: 1;
     }
   }

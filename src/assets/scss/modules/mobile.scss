@@ -2,7 +2,6 @@
 .mobile {
   height: 688px;
   background: url("../img/mobile.jpg") center right no-repeat;
-  margin-bottom: 50px;
 }
 
 .mobile__container { 
@@ -17,7 +16,11 @@
   }
   .mobile__container { 
     max-width: initial;
-    padding: 0 25px;
+  }
+}
+@media screen and (max-width: $phoneWidth) {
+  .mobile {
+    padding-top: 380px!important;
   }
 }
 
@@ -52,5 +55,8 @@
     svg:last-child {
       opacity: 0.5;
     }
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }

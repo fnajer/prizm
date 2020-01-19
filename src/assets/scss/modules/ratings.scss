@@ -2,8 +2,7 @@
 .ratings {
   display: flex;
   justify-content: space-between;
-  max-height: 702px;
-  margin-bottom: 70px;
+  align-items: center;
 }
 
 .ratings__right-container {
@@ -20,9 +19,7 @@
   .ratings {
     flex-wrap: wrap;
     max-height: initial;
-    padding: 28px 25px !important;
     flex-wrap: wrap;
-    margin-bottom: 30px;
   }
   .ratings__left-container { 
     max-width: initial;
@@ -59,6 +56,12 @@
     }
   }
 }
+@media screen and (max-width: $phoneWidth) {
+  .ratings__left-container {
+    padding-top: 5px;
+  }
+}
+
 .rating_market {
   grid-column-start: 1;
   grid-row-start: 1;

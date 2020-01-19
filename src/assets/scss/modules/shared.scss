@@ -1,14 +1,35 @@
 
 .menu {
   display: flex;
-
-  & li {
+  align-items: center;
+  li {
+    text-align: center;
+  }
+  & a {
+    display: inline-block;
     padding: 10px 30px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
     &:hover {
       opacity: 0.5;
     }
   }
+}
+.menu_extra a {
+	color: rgba(224, 224, 255, 0.6);
+}
+
+iframe {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
 }
 
 .button {
@@ -76,6 +97,7 @@
   letter-spacing: -2px;
   color: #ffffff;
   margin-bottom: 48px;
+  font-family: 'MontserratBold';
 }
 
 .heading-2 {
@@ -86,7 +108,7 @@
   line-height: 1;
   letter-spacing: -1px;
   color: #ffffff;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 .heading-3 {
   font-size: 20px;
@@ -129,7 +151,7 @@
   line-height: 1.75;
   letter-spacing: normal;
   color: rgba(224, 224, 255, 0.6);
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .text-purple {

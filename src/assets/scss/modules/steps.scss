@@ -1,8 +1,7 @@
 
 .steps {
   position: relative;
-  height: 500px;
-  margin-bottom: 50px;
+  height: 600px;
   display: flex;
   justify-content: space-between;
 }
@@ -11,8 +10,8 @@
   content: '';
   display: block;
   position: absolute;
-  left: 40%;
-  top: 25%;
+  left: 43%;
+	top: 29%;
   transform: translate(-40%, -25%);
   z-index: -1;
   width: 300px;
@@ -34,11 +33,13 @@
   .steps {
     flex-wrap: wrap;
     height: auto;
-    margin-bottom: 40px;
-    padding: 28px 25px !important;
     &:before {
-      left: 50%;
-      top: 18%;
+      left: 47%;
+      top: 61%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
     }
   }
   .steps__left-container { 
@@ -47,19 +48,14 @@
     margin-right: 0;
     width: 100%;
     height: auto;
-    iframe {
-      width: 100%;
-      height: 100%;
-    }
   }
   .steps__right-container { 
     width: 100%;
     justify-content: center;
-    padding: 150px 0 25px 0;
+    padding-top: 120px;
     .steps__blocks {
       margin-top: 72px;
       justify-content: space-between;
-      overflow: auto;
       padding-bottom: 25px;
       .step {
         flex-shrink: 0;
@@ -67,17 +63,49 @@
         &:last-child {
           margin-right: 0;
         }
+        &:before {
+          top: -54px;
+        }
+        &:after {
+          top: -46px;
+        }
       }
       &:after {
-        top: 520px;
+        top: 530px;
       }
     }
   }
 }
+@media screen and (max-width: $tableWidth) {
+  .steps__right-container .steps__blocks:after {
+    top: 510px;
+  }
+}
 
-iframe {
-  border-radius: 24px;
-  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+@media screen and (max-width: 640px) {
+  .steps:before {
+    left: 56%;
+    top: 15%;
+  }
+  .steps__right-container .steps__blocks {
+    margin-top: 30px;
+    overflow: auto;
+    &:after {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: $phoneWidth) {
+  .steps iframe {
+    height: 200px;
+  }
+  .steps__right-container {
+    padding: 0;
+  }
+}
+
+.steps iframe {
+  width: 445px;
 }
 
 .steps__blocks {
@@ -91,7 +119,7 @@ iframe {
     content: '';
     display: block;
     position: absolute;
-    top: 45px;
+    top: 75px;
     min-width: 550px;
     height: 2px;
     background-color: rgba(156, 66, 245, 0.06);

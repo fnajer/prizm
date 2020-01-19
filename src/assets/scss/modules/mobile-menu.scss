@@ -2,7 +2,7 @@
 .mobile-header {
   display: none;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 71px;
   left: 0;
   box-shadow: 0 63px 32px -4px rgba(20,16,41,.24), 0 115px 96px 0 rgba(20,16,41,.4), 0 20px 16px -1px rgba(20,16,41,.24), 0 4px 1px 0 rgba(20,16,41,.4);
@@ -10,6 +10,9 @@
 }
 
 .mobile-header__body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   height: 0;
   transition: all 0.3s ease-in;
@@ -30,9 +33,11 @@
 }
 
 .language-view {
+  max-width: 800px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 12px 24px 12px 16px;
+  padding: 12px 30px 12px 16px;
   font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
@@ -117,36 +122,45 @@
     height: 0;
   }
   .mobile-header__language {
-    height: 232px;
+    height: 220px;
   }
 }
 
 .mobile-menu {
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  color: #ffffff;
+  max-width: 800px;
+  width: 100%;
   li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px 12px 72px;
+    padding: 0 30px 0 72px;
+  }
+  a {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #ffffff;
+    background: url('/assets/img/arrow-right.svg') center right no-repeat;
     cursor: pointer;
-
+  
     &:hover {
       opacity: 0.5;
     }
   }
 }
 
+
+
 .language__head {
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
-  padding: 12px 0 12px 16px;
+  padding: 12px 0 0 16px;
   span {
     font-size: 16px;
     font-weight: 600;
@@ -181,23 +195,23 @@
 }
 
 .language__list {
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  color: #ffffff;
   padding: 0 20px 0 32px;
   li {
-    padding: 12px 0;
     cursor: pointer;
+  }
+  a {
+    display: block;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #fff;
   }
   img {
     margin-right: 16px;
-  }
-  svg {
-    margin-left: auto;
   }
 }
 

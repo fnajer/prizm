@@ -6,6 +6,7 @@
   height: 560px;
   width: 100%;
   max-width: 1440px;
+  margin-bottom: 48px;
   background: url("../img/join-bg.jpg") center no-repeat;
   .text-purple:before {
     content: '@prizmspacebot';
@@ -13,12 +14,12 @@
 }
 
 .join__container { 
-  max-width: 445px;
+  max-width: 400px;
+  margin-left: auto;
 }
 
 @media screen and (max-width: $tableWidth) {
   .join {
-    padding: 28px 25px !important;
     height: auto;
     padding-top: 450px !important;
     background: url("../img/join-mobile.jpg") top no-repeat;
