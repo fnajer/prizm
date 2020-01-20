@@ -98,6 +98,7 @@
 }
 
 .affiliates__table td:first-child {
+  font-family: 'MontserratSemiBold';
   width: 12%;
   text-align: center;
   color: rgba(224, 224, 255, 0.6);
@@ -105,6 +106,7 @@
 .affiliates__table td:nth-child(2) {
   width: 12%;
   font-size: 16px;
+  font-family: 'MontserratMedium';
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

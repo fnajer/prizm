@@ -23,15 +23,13 @@
 }
 
 .logo {
+  font-family: 'MontserratBold';
   font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
   letter-spacing: -1px;
   color: #ffffff;
   &_second-part {
-    font-weight: normal;
+    font-family: 'Montserrat';
   }
   button {
     flex-shrink: 0;
@@ -55,7 +53,7 @@
 
   /* Font settings */
   font-size: 16px;
-  font-weight: 600;
+  font-family: 'MontserratSemiBold';
   font-stretch: normal;
   font-style: normal;
   line-height: 1.5;

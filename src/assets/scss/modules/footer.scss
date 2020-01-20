@@ -17,6 +17,7 @@
     border-radius: 15px;
     background-color: rgba(224, 224, 255, 0.02);
     font-size: 16px;
+    font-family: 'MontserratMedium';
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -59,10 +60,12 @@
   }
 }
 
+.footer > .footer__menu a {
+  font-family: 'MontserratSemiBold';
+}
 .footer__menu {
   justify-content: space-between;
   font-size: 14px;
-  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.71;
@@ -80,6 +83,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+  font-family: 'MontserratMedium';
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -92,6 +96,7 @@
 .footer__made {
   display: block;
   font-size: 14px;
+  font-family: 'MontserratMedium';
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
